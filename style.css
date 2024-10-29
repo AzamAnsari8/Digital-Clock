@@ -6,11 +6,12 @@ body {
 
 h1 {
     font-size: 50px;
+    padding-bottom: 10px;
 }
 
 .dates span {
-    font-size: 60px;
-    width: 100px;
+    font-size: 50px;
+    width: 70px;
     display: inline-block;
     text-align: center;
     position: relative;
@@ -18,17 +19,17 @@ h1 {
 }
 
 .dates span::after {
-    font-size: 30px;
+    font-size: 20px;
     position: absolute;
-    bottom: -20px;
+    bottom: -15px;
     left: 50%;
     transform: translate(-50%);
 
 }
 
 .time span {
-    font-size: 60px;
-    width: 100px;
+    font-size: 50px;
+    width: 18%;
     display: inline-block;
     text-align: center;
     position: relative;
@@ -38,7 +39,7 @@ h1 {
 .time span::after {
     font-size: 20px;
     position: absolute;
-    bottom: -10px;
+    bottom: -15px;
     left: 50%;
     transform: translate(-50%);
 
