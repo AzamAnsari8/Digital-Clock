@@ -1,66 +1,15 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-
 body {
+    background: linear-gradient(45deg, #08001f, aqua);
     width: 100%;
     min-height: 100vh;
-    background: linear-gradient(45deg, #08001f, #30167d);
-    color: #fff;
-    position: relative;
-
 }
 
-.container {
-    width: 800px;
-    height: 400px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.clock {
-    width: 100%;
-    height: 100%;
-    display: grid;
-    align-items: center;
-    justify-content: center;
-    background: rgba(235, 0, 255, 0.11);
-    backdrop-filter: blur(40px);
-    border: 3px solid #bb27a2;
-    border-top-right-radius: 30px;
-    border-bottom-left-radius: 30px ;
-}
-
-.container::before {
-    content: '';
-    width: 180px;
-    height: 180px;
-    background: #f41b75;
-    border-radius: 5px;
-    position: absolute;
-    left: -60px;
-    top: -60px;
-    z-index: -1;
-}
-
-.container::after {
-    content: '';
-    width: 180px;
-    height: 180px;
-    background: #419aff;
-    border-radius: 50%;
-    position: absolute;
-    right: -80px;
-    bottom: -80px;
-    z-index: -1;
+h1 {
+    font-size: 50px;
 }
 
 .dates span {
-    font-size: 70px;
-    letter-spacing: 3px;
+    font-size: 60px;
     width: 100px;
     display: inline-block;
     text-align: center;
@@ -78,7 +27,7 @@ body {
 }
 
 .time span {
-    font-size: 80px;
+    font-size: 60px;
     width: 100px;
     display: inline-block;
     text-align: center;
@@ -94,7 +43,6 @@ body {
     transform: translate(-50%);
 
 }
-
 
 #date::after {
     content: 'DATE';
