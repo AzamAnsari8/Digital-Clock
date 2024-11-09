@@ -29,7 +29,7 @@ h1 {
 
 .time span {
     font-size: 50px;
-    width: 18%;
+    width: 70px;
     display: inline-block;
     text-align: center;
     position: relative;
@@ -67,4 +67,19 @@ h1 {
 
 #sec::after {
     content: 'SEC';
+}
+
+@media only screen and (max-width: 768px) {
+
+    h1,
+    .dates span,
+    .time span {
+        font-size: 20px;
+    }
+
+    .dates span::after,
+    .time span::after {
+        font-size: 15px;
+        margin-bottom: 3px;
+    }
 }
